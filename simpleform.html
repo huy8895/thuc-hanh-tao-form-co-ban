@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thuc hanh tao form co ban</title>
+    <style>
+        form select{
+            width: 300px;
+            color: green;
+            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <form method="GET" action="simpleform.html">
+    
+    <form method="GET" action="simpleform.html" id="wufoo">
         <h2>Oder form</h2>
         <p>What would you like to buy?</p>
         <select>
@@ -15,6 +23,19 @@
             <option value="">beer</option>
         </select>
         <p>How many would you like to order?</p>
+        <input type="radio" name="radio"/>1 - $10<br>
+        <input type="radio" name="radio"/>1 - $20<br>
+        <input type="radio" name="radio"/>1 - $30<br>
+        <p>Name</p>
+        <input type="text" name="FirstName" placeholder="FirstName" size="15"/>
+        <input type="text" name="LastName" placeholder="LastName" size="15"/>
+        <p>Email</p>
+        <input type="text" name="email" size="20"/>
+        <p>Phone Number</p>
+        <input type="text" name="phonenumber" size="10"/> -
+        <input type="text" name="phonenumber" size="10"/> -
+        <input type="text" name="phonenumber" size="10"/> 
+        <p><input type = "button" name="btSubmit" value="Submit"/></p>
     </form>
     
 </body>
